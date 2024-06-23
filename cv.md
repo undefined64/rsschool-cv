@@ -1,6 +1,6 @@
 # Kiryl Shauhenia
 
-### My contacts:
+### My contacts
 
 📱 +375(29)334-20-33
 
@@ -10,13 +10,14 @@ tg: [@undefined64](https://t.me/undefined64)
 
 ### About me
 
-I am 23 years old. Working as a sales manager. Web development is a field that truly inspires me, as it empowers me to transform ideas into reality through the artful combination of design aesthetics and cutting-edge technology
+I am 23 years old. Working as a sales manager.
+Web development is a field that truly inspires me, as it empowers me to transform ideas into reality through the artful combination of design aesthetics and cutting-edge technology
 
 ### Skills
 
 - Hard skills
   - html
-  - css/scss
+  - css/scss/tailwind
   - js
   - react basics
 - Soft skills
@@ -50,4 +51,5 @@ function digitalRoot(n) {
 ### Languages
 
 **English** - B1(due to Epam online test) / intermediate+(due to Andersen English assessment)
+
 **Belarusian🤍** - native
