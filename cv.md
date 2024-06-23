@@ -49,6 +49,6 @@ function digitalRoot(n) {
 
 ### Languages
 
-**English** - B1(due to Epam online test) / intermediate+(due to Andersen English assessment)
+**English** - B1(acc to Epam online test) / Intermediate+(acc to Andersen English assessment)
 
 **Belarusian🤍** - native
