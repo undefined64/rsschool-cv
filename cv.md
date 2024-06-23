@@ -10,8 +10,7 @@ tg: [@undefined64](https://t.me/undefined64)
 
 ### About me
 
-I am 23 years old. Working as a sales manager.
-Web development is a field that truly inspires me, as it empowers me to transform ideas into reality through the artful combination of design aesthetics and cutting-edge technology
+I am 23 years old. Working as a sales manager.<br/>Web development is a field that truly inspires me,<br/>as it empowers me to transform ideas into reality<br/>through design aesthetics and cutting-edge technology<br/>I devote time everyday to learning English and frontend
 
 ### Skills
 
