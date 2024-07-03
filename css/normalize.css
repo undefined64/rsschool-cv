@@ -22,6 +22,10 @@ hr {
   overflow: visible;
 }
 
+li {
+  list-style-type: none;
+}
+
 pre {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
@@ -29,6 +33,7 @@ pre {
 
 a {
   background-color: transparent;
+  text-decoration: none;
 }
 
 abbr[title] {
