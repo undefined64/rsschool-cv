@@ -91,4 +91,24 @@
   padding: 4px 8px;
   border-radius: 5px;
   font-weight: 500;
+}
+
+.about {
+  margin-top: 20px;
+  background-color: #fefefe;
+  border: 1px solid #d5d9df;
+  padding: 0 25px;
+  border-radius: 10px;
+}
+.about__title {
+  color: #283841;
+}
+.about__description {
+  margin-bottom: 20px;
+}
+
+.section__title {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 20px 0 10px 0;
 }/*# sourceMappingURL=style.css.map */
