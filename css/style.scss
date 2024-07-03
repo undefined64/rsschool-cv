@@ -113,11 +113,6 @@ $background-color: #f2f4f7;
 }
 
 .about {
-  margin-top: 20px;
-  background-color: #fefefe;
-  border: 1px solid #d5d9df;
-  padding: 0 25px;
-  border-radius: 10px;
   &__title {
     color: $font-primary-color;
   }
@@ -126,8 +121,22 @@ $background-color: #f2f4f7;
   }
 }
 
-.section__title {
-  font-weight: 600;
-  font-size: 20px;
-  margin: 20px 0 10px 0;
+.section {
+  margin-top: 20px;
+  background-color: #fefefe;
+  border: 1px solid #d5d9df;
+  padding: 0 25px;
+  border-radius: 10px;
+  &__title {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 20px 0 10px 0;
+    color: $font-primary-color;
+  }
+}
+
+.code {
+  pre {
+    margin-top: -40px;
+  }
 }
