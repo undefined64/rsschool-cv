@@ -182,3 +182,43 @@ $background-color: #f2f4f7;
     }
   }
 }
+
+.projects {
+  &__content {
+    flex: 3;
+  }
+  &__tools {
+    flex: 2;
+    &-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+    &-title {
+      font-weight: 400;
+      margin-bottom: 5px;
+    }
+    &-item {
+      font-size: 16px;
+    }
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    &-title {
+      color: $font-primary-color;
+      font-weight: 500;
+      margin-bottom: 3px;
+      font-size: 20px;
+    }
+    &-description {
+      font-size: 18px;
+    }
+    &-link {
+      font-size: 16px;
+      color: #24a1de;
+    }
+  }
+}

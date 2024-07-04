@@ -154,4 +154,42 @@
 }
 .education__item-years {
   font-size: 16px;
+}
+
+.projects__content {
+  flex: 3;
+}
+.projects__tools {
+  flex: 2;
+}
+.projects__tools-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.projects__tools-title {
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.projects__tools-item {
+  font-size: 16px;
+}
+.projects__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.projects__item-title {
+  color: #283841;
+  font-weight: 500;
+  margin-bottom: 3px;
+  font-size: 20px;
+}
+.projects__item-description {
+  font-size: 18px;
+}
+.projects__item-link {
+  font-size: 16px;
+  color: #24a1de;
 }/*# sourceMappingURL=style.css.map */
