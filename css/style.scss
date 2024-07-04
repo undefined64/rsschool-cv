@@ -223,3 +223,35 @@ $background-color: #f2f4f7;
     }
   }
 }
+
+.serts {
+  &__wrapper {
+    display: flex;
+    justify-content: start;
+    gap: 7%;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+
+    &-title {
+      margin-bottom: 5px;
+      color: $font-primary-color;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    &-link {
+      font-size: 16px;
+    }
+
+    &-img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
