@@ -58,7 +58,6 @@
 .header__map-img {
   height: 24px;
   width: 26px;
-  color: red;
 }
 .header__details {
   display: flex;
@@ -116,4 +115,22 @@
 
 .code pre {
   margin-top: -40px;
+}
+
+.contacts__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+.contacts__list-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.contacts__list-item img {
+  height: 36px;
+}
+.contacts__list-item span {
+  color: #283841;
 }/*# sourceMappingURL=style.css.map */

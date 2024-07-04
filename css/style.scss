@@ -68,7 +68,6 @@ $background-color: #f2f4f7;
     &-img {
       height: 24px;
       width: 26px;
-      color: red;
     }
   }
 
@@ -109,9 +108,6 @@ $background-color: #f2f4f7;
   font-weight: 500;
 }
 
-.main {
-}
-
 .about {
   &__title {
     color: $font-primary-color;
@@ -138,5 +134,28 @@ $background-color: #f2f4f7;
 .code {
   pre {
     margin-top: -40px;
+  }
+}
+
+.contacts {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+
+    &-link {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    &-item {
+      img {
+        height: 36px;
+      }
+      span {
+        color: $font-primary-color;
+      }
+    }
   }
 }
