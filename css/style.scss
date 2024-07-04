@@ -239,7 +239,6 @@ $background-color: #f2f4f7;
     gap: 5%;
 
     &-title {
-      margin-bottom: 5px;
       color: $font-primary-color;
       font-weight: 500;
       white-space: nowrap;
@@ -250,8 +249,8 @@ $background-color: #f2f4f7;
     }
 
     &-img {
-      width: 80px;
-      height: 80px;
+      width: 60px;
+      height: 60px;
     }
   }
 }
