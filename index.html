@@ -1,9 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/googlecode.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <title>CV Shauhenia Kiryl</title>
   </head>
-  <body></body>
+  <body>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <a href="#contacts" class="nav__list-link">Contacts</a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#about" class="nav__list-link">About</a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#code" class="nav__list-link">Code</a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#education" class="nav__list-link">Education</a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#projects" class="nav__list-link">Projects</a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#certs" class="nav__list-link">Certifications</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <header class="header">
+        <img
+          src="/assets/img/ai-bg.png"
+          class="header__banner"
+          alt="header banner"
+        />
+        <div class="header__content">
+          <div class="header__main">
+            <img
+              src="/assets/img/catgithub.jpg"
+              alt="avatar"
+              class="header__ava"
+            />
+            <h1 class="header__title">Kiryl Shauhenia</h1>
+            <a
+              href="https://shorturl.at/8yL5f"
+              class="header__map"
+              target="_blank"
+            >
+              <img
+                src="/assets/icons/place.gif"
+                alt="map svg"
+                class="header__map-img"
+              />
+              <span class="header__map-text">Minsk, BY</span>
+            </a>
+            <h3 class="header__subtitle">Junior Frontend Developer</h3>
+          </div>
+          <div class="header__details">
+            <div class="header__languages">
+              <h4 class="header__details-title">Languages:</h4>
+              <ul class="header__details-list">
+                <li class="header__details-item tag">
+                  <b>English:</b> Intermediate
+                </li>
+                <li class="header__details-item tag"><b>Russian:</b> Native</li>
+              </ul>
+            </div>
+            <div class="header__details">
+              <h4 class="header__details-title">Skills:</h4>
+              <ul class="header__details-list">
+                <li class="header__details-item tag">Html</li>
+                <li class="header__details-item tag">Css/Sass</li>
+                <li class="header__details-item tag">Tailwind</li>
+                <li class="header__details-item tag">Responsive</li>
+                <li class="header__details-item tag">Javascript</li>
+                <li class="header__details-item tag">React</li>
+                <li class="header__details-item tag">Git</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="contacts section" id="contacts">
+          <h2 class="contacts__title section__title">Contacts</h2>
+          <ul class="contacts__list">
+            <li class="contacts__list-item">
+              <a
+                href="tel:+375293342033"
+                class="contacts__list-link"
+                target="_blank"
+                ><img src="/assets/icons/phone.svg" alt="phone icon" />
+                <span>+375293342033</span>
+              </a>
+            </li>
+            <li class="contacts__list-item">
+              <a
+                href="mailto:kirillpretty@gmail.com"
+                class="contacts__list-link"
+                target="_blank"
+                ><img src="/assets/icons/gmail.svg" alt="gmail icon" />
+                <span>kirillpretty@gmail.com</span>
+              </a>
+            </li>
+            <li class="contacts__list-item">
+              <a
+                href="t.me/undefined64"
+                class="contacts__list-link"
+                target="_blank"
+                ><img src="/assets/icons/telegram.svg" alt="telegram icon" />
+                <span>@undefined64</span>
+              </a>
+            </li>
+            <li class="contacts__list-item">
+              <a
+                href="https://discord.com/users/undefined64"
+                class="contacts__list-link"
+                target="_blank"
+                ><img src="/assets/icons/discord.svg" alt="discord icon" />
+                <span>@undefined64</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="about section" id="about">
+          <h2 class="about__title section__title">About me</h2>
+          <p class="about__description">
+            I am 23 years old. Working as a sales manager. Web development is a
+            field that truly inspires me, as it empowers me to transform ideas
+            into reality through design aesthetics and cutting-edge technology.
+            <br />
+            I devote time everyday to learning English and frontend
+          </p>
+        </section>
+        <section class="code section" id="code">
+          <h2 class="code__title section__title">Code example</h2>
+          <pre><code>
+function digitalRoot(n) {
+  while (n > 9) {
+    n = (n + '').split('');
+    n = n.reduce((acc, curr) => acc + Number(curr), 0);
+  }
+  return n;
+}</code></pre>
+        </section>
+        <section class="education section" id="education">
+          <h2 class="education__title section__title">Education</h2>
+          <div class="education__item">
+            <img
+              src="/assets/icons/bntu.png"
+              alt="bntu logo"
+              class="education__img"
+            />
+            <div class="education__item-wrapper">
+              <h4 class="education__item-title">
+                Belarusian National Technical University
+              </h4>
+              <p class="education__item-description">
+                Faculty of Information Technologies and Robotics
+              </p>
+              <p class="education__item-years">2018-2020</p>
+            </div>
+          </div>
+        </section>
+        <section class="projects section" id="projects">
+          <h2 class="projects__title section__title">Projects</h2>
+          <div class="projects__item">
+            <div class="projects__content">
+              <h4 class="projects__item-title">Library</h4>
+              <p class="projects__item-description">
+                Responsive library landing page
+              </p>
+              <a
+                href="https://undefined64.github.io/library/library/"
+                class="projects__item-link"
+                target="_blank"
+                >Click to view</a
+              >
+            </div>
+            <div class="projects__tools">
+              <h4 class="projects__tools-title">Tools:</h4>
+              <div class="projects__tools-wrapper">
+                <span class="projects__tools-item tag">Html</span>
+                <span class="projects__tools-item tag">Scss</span>
+                <span class="projects__tools-item tag">Javascript</span>
+                <span class="projects__tools-item tag">Json</span>
+                <span class="projects__tools-item tag">Responsive</span>
+              </div>
+            </div>
+          </div>
+          <div class="projects__item">
+            <div class="projects__content">
+              <h4 class="projects__item-title">Pizza Bar website</h4>
+              <p class="projects__item-description">
+                Pet project made to try new technologies
+              </p>
+              <a
+                href="https://undefined64.github.io/pzz-by/"
+                class="projects__item-link"
+                target="_blank"
+                >Click to view</a
+              >
+            </div>
+            <div class="projects__tools">
+              <h4 class="projects__tools-title">Tools:</h4>
+              <div class="projects__tools-wrapper">
+                <span class="projects__tools-item tag">Typescript</span>
+                <span class="projects__tools-item tag">React</span>
+                <span class="projects__tools-item tag">React Router</span>
+                <span class="projects__tools-item tag">Tailwind</span>
+                <span class="projects__tools-item tag">Fetch Api</span>
+                <span class="projects__tools-item tag">Vite</span>
+                <span class="projects__tools-item tag">Eslint</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="serts section" id="certs">
+          <h2 class="serts__title section__title">Certifications</h2>
+          <div class="serts__wrapper">
+            <div class="serts__item">
+              <img
+                src="/assets/icons/efset_logo.png"
+                alt="efset logo"
+                class="serts__item-img"
+              />
+              <div class="serts__item-content">
+                <p class="serts__item-title">EF SET</p>
+                <a
+                  href="https://cert.efset.org/aKHVcn"
+                  class="serts__item-link"
+                  target="_blank"
+                  >Certificate</a
+                >
+              </div>
+            </div>
+            <div class="serts__item">
+              <img
+                src="/assets/icons/fcc_logo.svg"
+                alt="freecodecamp logo"
+                class="serts__item-img"
+              />
+              <div class="serts__item-content">
+                <p class="serts__item-title">FreeCodeCamp</p>
+                <a
+                  href="https://www.freecodecamp.org/certification/Central_Cat/responsive-web-design"
+                  class="serts__item-link"
+                  target="_blank"
+                  >Certificate</a
+                >
+              </div>
+            </div>
+            <div class="serts__item">
+              <img
+                src="/assets/icons/rs_logo.svg"
+                alt="Rs School logo"
+                class="serts__item-img"
+              />
+              <div class="serts__item-content">
+                <p class="serts__item-title">Rs School</p>
+                <a
+                  href="https://cert.efset.org/aKHVcn"
+                  class="serts__item-link"
+                  target="_blank"
+                  >Certificate</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <a href="https://github.com/undefined64" class="footer__github"
+          >GitHub</a
+        >
+        <span class="footer__year">2024</span>
+        <a
+          href="https://rs.school/courses/javascript-ru"
+          class="footer__rs-link"
+          ><img
+            src="/assets/icons/rs-school-logo.svg"
+            alt="footer course logo"
+            class="footer__rs-img"
+        /></a>
+      </footer>
+    </div>
+  </body>
 </html>
