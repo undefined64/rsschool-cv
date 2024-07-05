@@ -31,22 +31,23 @@
   border-radius: 10px;
 }
 .nav__list-item {
-  padding: 8px 12px;
   flex: 1;
   display: block;
   border-right: 1px solid #d5d9df;
   text-align: center;
-  transition: 0.2s ease-in-out;
-}
-.nav__list-item:hover {
-  background-color: #fefefe;
-  background-color: #f2f4f7;
 }
 .nav__list-item:last-child {
   border-right: none;
 }
 .nav__list-link {
   color: #283841;
+  display: block;
+  padding: 8px 12px;
+  transition: 0.2s ease-in-out;
+}
+.nav__list-link:hover {
+  color: black;
+  background-color: #dce1e9;
 }
 
 .header {

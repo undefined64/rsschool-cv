@@ -36,16 +36,11 @@ $border-color: #d5d9df;
     border-radius: 10px;
 
     &-item {
-      padding: 8px 12px;
       flex: 1;
       display: block;
       border-right: 1px solid $border-color;
       text-align: center;
-      transition: 0.2s ease-in-out;
-      &:hover {
-        background-color: #fefefe;
-        background-color: $background-color;
-      }
+
       &:last-child {
         border-right: none;
       }
@@ -53,6 +48,14 @@ $border-color: #d5d9df;
 
     &-link {
       color: $font-primary-color;
+      display: block;
+      padding: 8px 12px;
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        color: darken($font-primary-color, $amount: 50%);
+        background-color: darken($color: $background-color, $amount: 7%);
+      }
     }
   }
 }
