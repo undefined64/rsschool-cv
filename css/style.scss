@@ -1,6 +1,7 @@
 $font-primary-color: #283841;
 $font-normal-color: #7e888d;
 $background-color: #f2f4f7;
+$border-color: #d5d9df;
 
 * {
   font-family: 'Work Sans', sans-serif;
@@ -9,6 +10,7 @@ $background-color: #f2f4f7;
   margin: 0;
   padding: 0;
   color: $font-normal-color;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -18,9 +20,42 @@ $background-color: #f2f4f7;
   padding: 20px;
 }
 
+.nav {
+  max-width: 1000px;
+
+  margin: 0 auto;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid $border-color;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    &-item {
+      padding: 8px 12px;
+      flex: 1;
+      display: block;
+      border-right: 1px solid $border-color;
+      text-align: center;
+      transition: 0.2s ease-in-out;
+      &:hover {
+        background-color: #fefefe;
+        background-color: $background-color;
+      }
+      &:last-child {
+        border-right: none;
+      }
+    }
+
+    &-link {
+      color: $font-primary-color;
+    }
+  }
+}
+
 .header {
   background-color: #fefefe;
-  border: 1px solid #d5d9df;
+  border: 1px solid $border-color;
   border-radius: 10px;
 
   &__main {
@@ -120,7 +155,7 @@ $background-color: #f2f4f7;
 .section {
   margin-top: 20px;
   background-color: #fefefe;
-  border: 1px solid #d5d9df;
+  border: 1px solid $border-color;
   padding: 0 25px;
   border-radius: 10px;
   &__title {

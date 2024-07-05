@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   color: #7e888d;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -12,6 +13,36 @@
   background-color: #f2f4f7;
   margin: 0 auto;
   padding: 20px;
+}
+
+.nav {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #d5d9df;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.nav__list-item {
+  padding: 8px 12px;
+  flex: 1;
+  display: block;
+  border-right: 1px solid #d5d9df;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+}
+.nav__list-item:hover {
+  background-color: #fefefe;
+  background-color: #f2f4f7;
+}
+.nav__list-item:last-child {
+  border-right: none;
+}
+.nav__list-link {
+  color: #283841;
 }
 
 .header {
