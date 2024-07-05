@@ -163,6 +163,11 @@
   display: flex;
   align-items: center;
   gap: 5px;
+  transition: all 0.2s ease-in;
+}
+.contacts__list-link:hover {
+  scale: 105%;
+  animation: 0.6s 1 alternate horizontal-shaking;
 }
 .contacts__list-item img {
   height: 36px;
@@ -274,5 +279,19 @@
 @media screen and (prefers-color-scheme: dark) {
   body {
     background-color: #353535;
+  }
+}
+@keyframes horizontal-shaking {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(5px);
+  }
+  66% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }/*# sourceMappingURL=style.css.map */
