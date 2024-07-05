@@ -13,6 +13,8 @@
   background-color: #f2f4f7;
   margin: 0 auto;
   padding: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .nav {
@@ -249,4 +251,19 @@
 .serts__item-img {
   width: 60px;
   height: 60px;
+}
+
+.footer {
+  margin-top: 15px;
+  display: flex;
+  padding: 0 25px;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__github {
+  color: #283841;
+  font-weight: 500;
+}
+.footer__rs-img {
+  width: 80px;
 }/*# sourceMappingURL=style.css.map */
