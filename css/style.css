@@ -19,14 +19,16 @@
 
 .nav {
   max-width: 1000px;
+  background-color: #f2f4f7;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   margin: 0 auto;
 }
 .nav__list {
   display: flex;
   justify-content: space-between;
   border: 1px solid #d5d9df;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-radius: 10px;
 }
 .nav__list-item {
   padding: 8px 12px;
@@ -266,4 +268,10 @@
 }
 .footer__rs-img {
   width: 80px;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    background-color: #353535;
+  }
 }/*# sourceMappingURL=style.css.map */

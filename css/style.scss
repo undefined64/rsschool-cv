@@ -24,14 +24,16 @@ $border-color: #d5d9df;
 
 .nav {
   max-width: 1000px;
+  background-color: $background-color;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 
   margin: 0 auto;
   &__list {
     display: flex;
     justify-content: space-between;
     border: 1px solid $border-color;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
 
     &-item {
       padding: 8px 12px;
@@ -306,5 +308,11 @@ $border-color: #d5d9df;
 
   &__rs-img {
     width: 80px;
+  }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    background-color: #353535;
   }
 }
