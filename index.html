@@ -150,9 +150,9 @@
           <h2 class="code__title section__title">Code example</h2>
           <pre><code>
 function digitalRoot(n) {
-  while (n > 9) {
+  while (n &gt; 9) {
     n = (n + '').split('');
-    n = n.reduce((acc, curr) => acc + Number(curr), 0);
+    n = n.reduce((acc, curr) =&gt; acc + Number(curr), 0);
   }
   return n;
 }</code></pre>
